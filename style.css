@@ -1,0 +1,105 @@
+/* Universal reset and setting the notebook-like font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4e8; /* Light cream/paper color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* The main container for the whole chatbot */
+.chatbot-container {
+    width: 90%;
+    max-width: 400px; /* Slimmer, like a notebook */
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #c0c0b6; /* Subtle border for the notebook edge */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Header styling (The "Strict Mentor" style) */
+.chat-header {
+    background-color: #3f51b5; /* Professional blue */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    border-bottom: 2px solid #283593;
+}
+
+/* Chat history area - The 'pages' of the notebook */
+.chat-box {
+    flex-grow: 1; /* Allows it to take up available space */
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto; /* Scrollable chat history */
+    background: repeating-linear-gradient(
+        #ffffff, 
+        #ffffff 29px, 
+        #dee2e6 30px, /* Subtle line for notebook paper */
+        #dee2e6 30px
+    );
+    background-size: 100% 30px;
+}
+
+/* Styling for individual messages */
+.message {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    max-width: 80%;
+    line-height: 1.5;
+}
+
+/* User's messages (right-aligned) */
+.user-message {
+    background-color: #e0f7fa; /* Light cyan */
+    align-self: flex-end;
+    margin-left: auto;
+    border-bottom-right-radius: 2px;
+    text-align: right;
+}
+
+/* Bot's messages (left-aligned) */
+.bot-message {
+    background-color: #cfd8dc; /* Light grey/stone */
+    align-self: flex-start;
+    margin-right: auto;
+    border-bottom-left-radius: 2px;
+}
+
+/* Input area styling */
+.chat-input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+#send-btn {
+    padding: 10px 15px;
+    background-color: #3f51b5; /* Matching professional blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#send-btn:hover {
+    background-color: #283593;
+}
