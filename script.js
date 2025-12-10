@@ -6,7 +6,7 @@ const sendBtn = document.getElementById('send-btn');
 // 🛑🛑 CRITICAL SECURITY WARNING 🛑🛑
 // DO NOT DEPLOY THIS CODE TO A LIVE WEBSITE. API KEYS MUST BE HIDDEN 
 // ON A BACKEND SERVER (PROXY). This direct method is for local, educational testing ONLY.
-const GEMINI_API_KEY = "AIzaSyCbo5-cpFONtCWpkI7TnsLWdTVY-uJYNfw"; // 👈 REPLACE THIS WITH YOUR REAL GEMINI KEY
+const GEMINI_API_KEY = "AIzaSyAe5icHs3UxJhReC8ao6lwamwAYDd-hrRc"; // 👈 REPLACE THIS WITH YOUR REAL GEMINI KEY
 const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 const MODEL_NAME = "gemini-2.5-flash"; 
 
